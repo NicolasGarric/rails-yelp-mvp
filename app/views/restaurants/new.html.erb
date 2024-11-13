@@ -1,0 +1,9 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, error: 'Choose category between: chinese, italian, japanese, french and belgian' %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Go back to List', restaurants_path %>
